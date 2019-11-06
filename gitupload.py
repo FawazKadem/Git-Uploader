@@ -1,3 +1,4 @@
+
 '''
 Program to create repo on Github and then upload local project to it.
 Motivation: I make lots of small projects that don't greatly benefit from source control.
@@ -33,7 +34,7 @@ g = Github(token)
 
 usr = g.get_user()
 
-#delete remote repo if it exists
+# delete remote repo if it exists
 repoNameAvailable = True
 
 for usrRepo in usr.get_repos():
@@ -51,10 +52,10 @@ while not repoNameAvailable:
         print("quitting")
         quit()
 
-#Create remote repo
+# Create remote repo
 newRepo = usr.create_repo(reponame)
 
-#Configure local repo
+# Configure local repo
 
 commit_message = "Upload"
 if len(sys.argv) > 2:
@@ -63,7 +64,15 @@ localRepo = git.Repo.init(".")
 localRepo.index.add(['*'])
 localRepo.index.commit(message=commit_message)
 
-if not localRepo.remote('origin').exists():
+
+exists = True
+
+try:
+    localRepo.remote('origin').exists()
+except ValueError:
+    exists = False
+
+if not exists:
     origin = localRepo.create_remote('origin', newRepo.html_url)
 
 localRepo.remote('origin').set_url(newRepo.html_url)
