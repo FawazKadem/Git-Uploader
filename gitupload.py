@@ -56,7 +56,7 @@ newRepo = usr.create_repo(reponame)
 
 #Configure local repo
 
-commit_message = "upload"
+commit_message = "Upload"
 if len(sys.argv) > 2:
     commit_message = sys.argv[2]
 localRepo = git.Repo.init(".")
