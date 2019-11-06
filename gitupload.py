@@ -12,7 +12,9 @@ Author: Fawaz M. Kadem. https://github.com/FawazMohammad https://fawazm.me/
 from github import Github
 import git
 import sys
+import os
 
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 # Get repo name from command line. If no argument, prompt user for name
 reponame = ''
 if len(sys.argv) <= 1:
@@ -21,8 +23,8 @@ else:
     reponame=sys.argv[1]
 
 
-f = open("token.config", "r")
-token = f.readline()
+f = open((os.path.join(__location__, './token.config')), "r")
+token = f.readline().rstrip()
 f.close()
 
 
@@ -39,7 +41,7 @@ for usrRepo in usr.get_repos():
         repoNameAvailable = False
 
 while not repoNameAvailable:
-    ans = input("A repo with this name already exists. D-delete S-stop upload ")
+    ans = input("A repo with this name already exists. D-Delete R-Choose a different name S-Stop upload & exit ")
     if ans == "D":
         usr.get_repo(reponame).delete()
         repoNameAvailable = True
@@ -53,7 +55,10 @@ while not repoNameAvailable:
 newRepo = usr.create_repo(reponame)
 
 #Configure local repo
+
 commit_message = "upload"
+if len(sys.argv) > 2:
+    commit_message = sys.argv[2]
 localRepo = git.Repo.init(".")
 localRepo.index.add(['*'])
 localRepo.index.commit(message=commit_message)

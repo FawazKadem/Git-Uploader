@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5efb08a1-f9ba-4177-90aa-7ade11e97d55" name="Default Changelist" comment="" />
+    <list default="true" id="5efb08a1-f9ba-4177-90aa-7ade11e97d55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/gitupload.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitupload.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gitupload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="299">
+              <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
               <folding>
                 <element signature="e#489#514#0" expanded="true" />
               </folding>
@@ -31,6 +33,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -44,6 +49,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -64,6 +70,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -120,12 +127,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572992631749</updated>
-      <workItem from="1572992633033" duration="10187000" />
+      <workItem from="1572992633033" duration="11330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10187000" />
+    <option name="totallyTimeSpent" value="11330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -163,8 +170,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gitupload.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="299">
+          <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
           <folding>
             <element signature="e#489#514#0" expanded="true" />
           </folding>
