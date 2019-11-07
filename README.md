@@ -1,7 +1,7 @@
 # Git-Uploader
 Python script to automate uploading project to Github
 
-Motivation: I make lots of small projects that don't greatly benefit from source control. I want to upload these projects to GitHub, but not have to go through the tedious process everytime.
+Motivation: I make lots of small projects that don't greatly benefit from source control. I want to upload these projects to GitHub once they're finished, but not have to go through the tedious process everytime.
 
 This program will:
   1. Create a repo on your github account with your desired name
